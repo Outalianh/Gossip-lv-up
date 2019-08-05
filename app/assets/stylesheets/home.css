@@ -1,0 +1,15 @@
+
+.card {
+	display: inline-block;
+	align-content: baseline;
+	
+
+}
+.body {
+	width: 900px;
+	margin: auto;
+	margin-top: 20px;
+}
+div.card {
+	margin-bottom: : 15px;
+}

@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="../assets/stylesheets/home.css">
+<div class="body">
+<center><h1>Welcome sur cette magnifique page !</h1></center>
+<br>
+<h6>Voici tout les potins en base :</h6>
+
+<p><%Gossip.all.each do |g|%>
+			
+<div class="card" style="width: 18rem;margin: 3px;">
+  <div class="card-body">
+    <h5 class="card-title">Auteur : <%=g.user.first_name%></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Titre : <%=g.title%></h6>
+    <p class="card-text">Clique sur le lien en dessous pour voir leur contenu</p>
+    <center><a href="<%=gossip_path(g.id)%>" class="card-link">Gossip Link</a></center>
+  </div>
+</div>
+
+<%end%></p>
+</div>
